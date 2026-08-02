@@ -1,0 +1,226 @@
+/*
+============================
+Main content area and stuffs
+============================
+*/
+
+.home-main-content{
+  width: 70%;
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*
+===========
+Left Column
+===========
+*/
+
+.home-left-column{
+  width: 50%; 
+  gap: 15px; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.home-left-column p{
+  color: white;
+}
+
+.all-character{
+  width: 100%;
+  object-fit: contain;
+}
+
+/*
+============
+Right Column
+============
+*/
+
+.home-right-column{
+  width: 50%; 
+  display: flex; 
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quick-links{
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-list{
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self:self-start;
+  justify-content: left;
+  transition: gap 0.60s;
+}
+
+.icon-list img{
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.icon-list:hover{
+  gap: 20px;
+}
+
+/*
+==============================
+Buttons (Door/Light) and panel
+==============================
+*/
+
+.button-panel{
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 0px;
+  background-image: url(/FnafFan/assets/doorpanel.png);
+  background-position: center;
+  background-size: contain;
+}
+
+.door-panel p, .light-panel p{
+  margin-bottom: 0px;
+}
+
+/*
+===========
+Door Button
+===========
+*/
+
+.door-panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 55px;
+  padding: 10px 5px 0px;
+  background-color: #070709;
+  z-index: 11;
+}
+
+.door-panel button{
+  height: 35px;
+  width: 35px;
+  background-color: #d40000;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.75);
+  border: none;
+  cursor: pointer;
+}
+
+.door-panel button.door-panel-on{
+  background-color: #4cff00;
+}
+
+/*
+============
+Light Button
+============
+*/
+
+.light-panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 55px;
+  padding: 0px 5px 10px;
+  background-color: #070709;
+  z-index: 11;
+}
+
+.light-panel button{
+  height: 35px;
+  width: 35px;
+  background-color: #b5b5b5;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.75);
+  border: none;
+  cursor: pointer;
+}
+
+.light-panel button.light-panel-on {
+  background-color: #b9dcff;
+  box-shadow:
+    inset 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 12px rgba(120, 190, 255, 0.8);
+}
+
+/*
+======================
+Lights and door system
+======================
+*/
+
+.lights-on{
+  box-shadow: 0 0 40px 7px rgba(120, 190, 255, 0.65);
+}
+
+.door-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+  border-radius: 20px;
+  transform: translateY(-100%);
+  transition: transform 0.8s ease;
+}
+
+.door-close{
+  transform: translateY(0);
+}
+
+/*
+=======
+Tablet
+=======
+*/
+
+@media (max-width: 1024px){
+
+  .button-panel{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home-main-content{
+    flex-direction: column;
+  }
+
+  .home-left-column, .home-right-column{
+    width: 100%;
+  }
+
+  .home-left-column{
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-right-column{
+    flex-direction: row;
+  }
+
+}

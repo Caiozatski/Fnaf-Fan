@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fnaf Fan</title>
   <link rel="stylesheet" href="/FnafFan/css/style.css">
+  <link rel="stylesheet" href="/FnafFan/css/home.css">
 </head>
 <body>
-  <section class="header">
-    <img id="logo" src="/FnafFan/assets/logo.png">
+  <header class="header">
+    <img class="logo-header" src="/FnafFan/assets/logo.png">
+    <button class="menu-button">☰</button>
     <div class="header-content">
       <div class="nav-item">
         <img src="/FnafFan/assets/golden-freddy-head.png" class="characteranim">
@@ -31,14 +33,14 @@
         <a href="#" class="nav-btn contact">Contact</a>
       </div>
     </div>
-  </section>
+  </header>
 
   <section class="home-main-content">
     <img class="door-image" src="/FnafFan/assets/door-image.png">
-    <div style="width: 50%; gap: 15px; display: flex; flex-direction: column;">
-      <img style="width: 100%; object-fit: contain;" src="/FnafFan/assets/allcharacters.png">
+    <div class="home-left-column">
+      <img class="all-character" src="/FnafFan/assets/allcharacters.png">
       <h2>Thank you!</h2>
-      <p style="color: white;">Thank you for visiting FNAF Fan! This website was created as a celebration of Five Nights at Freddy’s
+      <p>Thank you for visiting FNAF Fan! This website was created as a celebration of Five Nights at Freddy’s
         and the incredible community that has grown around it over the years. Whether you’ve been here since
         the doors of Freddy Fazbear’s Pizza first opened or you’ve only recently discovered the series, I hope
         this site gives you a fun place to explore the timelines, characters, fangames, resources, and everything
@@ -46,47 +48,48 @@
         creators, and all the fans who continue to keep the mystery alive.
       </p>
     </div>
-    <div style="width: 50%; display: flex; flex-direction: column; gap: 20px;">
-      <div style="gap: 15px; display: flex; flex-direction: column;">
+    <div class="home-right-column">
+      <div class="quick-links">
         <h4>Quick Links</h4>
         <div class="icon-list">
-          <img style="width: 45px; height: 45px; object-fit: contain;" src="/FnafFan/assets/icons/fredcalendar-icon.png">
+          <img src="/FnafFan/assets/icons/fredcalendar-icon.png">
           <a href="#">Timelines</a>
         </div>
         <div class="icon-list">
-          <img style="width: 45px; height: 45px; object-fit: contain;" src="/FnafFan/assets/icons/faz-ticket-icon.png">
+          <img src="/FnafFan/assets/icons/faz-ticket-icon.png">
           <a href="#">Resources</a>
         </div>
         <div class="icon-list">
-          <img style="width: 45px; height: 45px; object-fit: contain;" src="/FnafFan/assets/icons/child-icon.png">
+          <img src="/FnafFan/assets/icons/child-icon.png">
           <a href="#">Fangames</a>
         </div>
         <div class="icon-list">
-          <img style="width: 45px; height: 45px; object-fit: contain;" src="/FnafFan/assets/icons/motorist-arcade-icon.png">
+          <img src="/FnafFan/assets/icons/motorist-arcade-icon.png">
           <a href="#">Arcade</a>
         </div>
         <div class="icon-list">
-          <img style="width: 45px; height: 45px; object-fit: contain;" src="/FnafFan/assets/icons/phoneguy-icon.png">
+          <img src="/FnafFan/assets/icons/phoneguy-icon.png">
           <a href="#">Contact</a>
         </div>
       </div>
       <div class="button-panel">
         <div class="door-panel">
           <button class="door-button"></button>
-          <p style="margin-bottom: 0px;">DOOR</p>
+          <p>DOOR</p>
         </div>
         <div class="light-panel">
           <button class="light-button"></button>
-          <p style="margin-bottom: 0px;">LIGHT</p>
+          <p>LIGHT</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="footer">
-    <img id="logo" src="/FnafFan/assets/logo.png">
-  </section>
+  <footer class="footer">
+    <img class="logo-ft" src="/FnafFan/assets/logo.png">
+  </footer>
 
   <script src="/FnafFan/js/script.js"></script>
+  <script src="/FnafFan/js/home.js"></script>
 </body>
 </html>
