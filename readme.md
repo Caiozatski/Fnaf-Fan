@@ -1,0 +1,3 @@
+I'm building this fan-made FNAF archive as a way to practice HTML, CSS, and JavaScript while experimenting with new and increasingly complex mechanics. My goal is to give the website its own visual identity through references, animations, and interactive elements inspired by the games.
+
+As a longtime fan of the Five Nights at Freddy's series, I've always wanted to build something around it — and what better project than an archive bringing together lore, fangames, arcades, resources, and more?

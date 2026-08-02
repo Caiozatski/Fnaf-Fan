@@ -1,0 +1,320 @@
+/* ========================================
+   FNAF FAN — GLOBAL STYLES
+======================================== */
+
+/* ---------- Variables ---------- */
+
+:root {
+  /* Backgrounds */
+  --bg-primary: #070709;
+  --bg-secondary: #0d0d12;
+  --bg-card: #121219;
+
+  /* Text */
+  --text-primary: #f1f1f1;
+  --text-secondary: #b5b5c0;
+  --text-muted: #777783;
+
+  /* FNAF Fan Colors */
+  --orange: #d87300;
+  --blue: #34348f;
+  --yellow: #b5a800;
+  --brown: #713838;
+  --red: #a8242b;
+
+
+  /* Layout */
+  --container: 1200px;
+
+  /* Transitions */
+  --transition: 0.25s ease;
+}
+
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  background-color: var(--bg-primary);
+
+  color: var(--text-primary);
+
+  font-family:
+    "Trebuchet MS",
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+  justify-content: center;
+}
+
+
+/* ========================================
+   TYPOGRAPHY
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+}
+
+
+/* Main page title */
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+
+  letter-spacing: 0.06em;
+
+  text-shadow: var(--blue-glow);
+}
+
+
+/* Section titles */
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  margin-bottom: 1rem;
+}
+
+
+/* Card / subsection titles */
+
+h3 {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+
+  color: var(--blue-light);
+}
+
+
+/* Smaller titles */
+
+h4 {
+  font-size: 1.2rem;
+}
+
+
+/* ========================================
+   TEXT
+======================================== */
+
+p {
+  color: var(--text-secondary);
+
+  margin-bottom: 1rem;
+
+  max-width: 70ch;
+}
+
+strong {
+  color: var(--text-primary);
+}
+
+small {
+  color: var(--text-muted);
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  gap: 15px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.header-content{
+  border-radius: 20px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.footer{
+  background-image: url(/FnafFan/assets/fnafwall-back.png);
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  padding: 20px 20px;
+  justify-content: center;
+  display: flex;
+  align-items: start;
+}
+
+#logo{
+  width: 40%;
+  object-fit: contain;
+}
+
+.nav-btn{
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white ;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.75);
+  transition: 0.35s;
+  gap: 0px;
+}
+
+.nav-btn:hover{
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.45);
+  transition: 0.65s;
+}
+
+.nav-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.characteranim{
+  visibility: hidden;
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  transform: translateY(30px);
+  transition: transform 1s;
+  z-index: -1;
+}
+
+.nav-item:hover .characteranim{
+  visibility: visible;
+  transform: translateY(-5px);
+}
+
+.timelines{
+  background-color: var(--orange);
+  border-radius: 20px 0 0 20px;
+}
+
+.resources{
+  background-color: var(--blue);
+}
+
+.fangames{
+  background-color: var(--yellow);
+}
+
+.arcade{
+  background-color: var(--brown);
+}
+
+.contact{
+  border-radius: 0 20px 20px 0;
+  background-color: var(--red);
+}
+
+.home-main-content{
+  width: 70%;
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  padding: 20px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.icon-list{
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self:self-start;
+  justify-content: left;
+  transition: gap 0.60s
+}
+
+.icon-list:hover{
+  gap: 20px;
+}
+
+.button-panel{
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 0px;
+  background-image: url(/FnafFan/assets/doorpanel.png);
+  background-position: center;
+  background-size: contain;
+}
+
+.door-panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 55px;
+  padding: 10px 5px 0px;
+  background-color: #070709;
+}
+
+.door-panel button{
+  height: 35px;
+  width: 35px;
+  background-color: #d40000;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.75);
+  border: none;
+  cursor: pointer;
+}
+
+.door-panel button:active{
+  background-color: #4cff00;
+}
+
+
+.light-panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 55px;
+  padding: 0px 5px 10px;
+  background-color: #070709;
+}
+
+.light-panel button{
+  height: 35px;
+  width: 35px;
+  background-color: #b5b5b5;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.75);
+  border: none;
+  cursor: pointer;
+}
+
+.light-panel button:active{
+  background-color: #dce8ff;
+}
