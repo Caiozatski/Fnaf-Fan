@@ -1,0 +1,233 @@
+/*
+=================
+MAIN CONTENT AREA
+=================
+*/
+
+main{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+/*
+====================
+SECTION FOREACH GAME
+====================
+*/
+
+.trailer-section{
+  display: flex;
+  flex-direction: row;
+  min-height: 350px;
+  gap: 20px;
+  padding: 40px 20px;
+  border-radius: 24px;
+  border: 1px dashed wheat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 24px;
+}
+
+.inverted{
+  flex-direction: row-reverse;
+}
+/*VIDEO BOX*/
+
+.video-area{
+  flex: 1;
+}
+
+.video-area iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  transition: box-shadow 0.60s;
+}
+
+/*CONTENT BOX*/
+
+.content-area{
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+.content-area img{
+  height: 100px;
+  pointer-events: none;
+  user-select: none;
+}
+
+/*TEXTS AREA*/
+.text-box{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.text-box p, h3{
+  color: white;
+}
+
+/*
+=============================
+SESSIONS BACKGROUNDS PER GAME
+=============================
+*/
+
+.fnaf1{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf1bg.png);
+  border-color: #4f1c0e;
+}
+
+.fnaf1 iframe:hover{
+  box-shadow: 0 0 30px 2px #4f1c0e;
+}
+
+.fnaf2{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf2bg.png);
+  border-color: #26132e;
+}
+
+.fnaf2 iframe:hover{
+  box-shadow: 0 0 30px 2px #26132e;
+}
+
+.fnaf3{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf3bg.png);
+  border-color: #2e3014;
+}
+
+.fnaf3 iframe:hover{
+  box-shadow: 0 0 30px 2px #2e3014;
+}
+
+.fnaf4{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf4bg.png);
+  border-color: #290b08;
+}
+
+.fnaf4 iframe:hover{
+  box-shadow: 0 0 30px 2px #290b08;
+}
+
+.fnaf5{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf5bg.png);
+  border-color: #10215C;
+}
+
+.fnaf5 iframe:hover{
+  box-shadow: 0 0 30px 2px #10215C;
+}
+
+.fnaf6{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf6bg.png);
+  border-color: #0d122d;
+}
+
+.fnaf6 iframe:hover{
+  box-shadow: 0 0 30px 2px #0d122d;
+}
+
+.fnaf7{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf7bg.png);
+  border-color: #573e35;
+}
+
+.fnaf7 iframe:hover{
+  box-shadow: 0 0 30px 2px #573e35;
+}
+
+.fnaf8{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf8bg.png);
+  border-color: #302f30;
+}
+
+.fnaf8 iframe:hover{
+  box-shadow: 0 0 30px 2px #302f30;
+}
+
+.fnaf9{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf9bg.png);
+  border-color: #aa091c;
+}
+
+.fnaf9 iframe:hover{
+  box-shadow: 0 0 30px 2px #aa091c;
+}
+
+.fnaf10{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf10bg.png);
+  border-color: #afcfe4;
+}
+
+.fnaf10 iframe:hover{
+  box-shadow: 0 0 30px 2px #afcfe4;
+}
+
+.fnaf11{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf11bg.png);
+  border-color: #4e0e56;
+}
+
+.fnaf11 iframe:hover{
+  box-shadow: 0 0 30px 2px #4e0e56;
+}
+
+.fnaf12{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf12bg.png);
+  border-color: #2c170a;
+}
+
+.fnaf12 iframe:hover{
+  box-shadow: 0 0 30px 2px #2c170a;
+}
+
+.fnaf13{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf13bg.png);
+  border-color: #631998;
+}
+
+.fnaf13 iframe:hover{
+  box-shadow: 0 0 30px 2px #631998;
+}
+
+.fnaf14{
+  background-image: url(/FnafFan/assets/resources/trailers/fnaf14bg.png);
+  border-color: #c5a563;
+}
+
+.fnaf14 iframe:hover{
+  box-shadow: 0 0 30px 2px #c5a563;
+}
+
+@media (max-width: 768px){
+  main{
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 425px){
+  .trailer-section{
+    flex-direction: column-reverse;
+  }
+
+  .content-area{
+    align-items: center;
+  }
+
+  .text-box{
+    align-items: center;
+    text-align: center;
+  }
+}

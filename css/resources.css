@@ -7,7 +7,7 @@ MAIN CONTENT
 .overlay{
   position: fixed;
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.70);
+  background-color: rgba(0, 0, 0, 0.50);
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -111,4 +111,37 @@ main{
   object-fit: cover;
   height: 120px;
   width: 120px;
+}
+
+/*
+===========
+TABLET VIEW
+===========
+*/
+
+@media (max-width: 768px){
+  .main-resources{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*
+===========
+MOBILE VIEW
+===========
+*/
+
+@media (max-width: 480px){
+  .main-resources{
+    grid-template-columns: 1fr;
+  }
+
+  main{
+    padding: 10px 0 10px;
+    gap: 15px;
+  }
+
+  .main-info{
+    width: 100%;
+  }
 }

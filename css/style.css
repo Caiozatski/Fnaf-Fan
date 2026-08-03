@@ -288,6 +288,7 @@ MOBILE VIEW
   .header{
     width: 100%;
     padding: 20px 20px;
+    margin-bottom: 0;
   }
 
   .header-content{

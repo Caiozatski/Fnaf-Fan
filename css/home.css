@@ -241,6 +241,9 @@ Tablet
 
   .home-main-content{
     flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100% - 40px);
   }
 
   .home-left-column, .home-right-column{
