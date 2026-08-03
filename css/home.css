@@ -14,6 +14,7 @@ Main content area and stuffs
   flex-direction: row;
   gap: 30px;
   margin-bottom: 30px;
+  margin-top: 30px;
   position: relative;
   overflow: hidden;
 }
@@ -199,6 +200,38 @@ Tablet
 */
 
 @media (max-width: 1024px){
+
+  .button-panel{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 0;
+  }
+
+  .quick-links{
+    width: 100%;
+  }
+
+  .home-main-content{
+    flex-direction: column;
+  }
+
+  .home-left-column, .home-right-column{
+    width: 100%;
+  }
+
+  .home-left-column{
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-right-column{
+    flex-direction: row;
+  }
+
+}
+
+@media (max-width: 740px){
 
   .button-panel{
     background-position: center;

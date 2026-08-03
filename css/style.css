@@ -60,7 +60,7 @@ body {
 
   font-size: 16px;
   line-height: 1.6;
-
+  padding: 20px 0 0;
   -webkit-font-smoothing: antialiased;
   justify-content: center;
 }
@@ -149,7 +149,6 @@ small {
   align-items: center;
   gap: 15px;
   margin: 0 auto;
-  margin-bottom: 30px;
 }
 
 .menu-button{
@@ -168,11 +167,16 @@ small {
   background-position: bottom;
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 400px;
   padding: 20px 20px;
   justify-content: center;
   display: flex;
   align-items: start;
+}
+
+.header > a{
+  display: flex;
+  justify-content: center;
 }
 
 .logo-header{
@@ -248,11 +252,12 @@ TABLET VIEW
 ===========
 */
 
-@media (max-width: 1024px){
+@media (max-width: 920px){
   .header{
     margin: 0 auto;
     margin-bottom: 30px;
   }
+
 
   .characteranim{
     display: none;
@@ -270,7 +275,7 @@ MOBILE VIEW
 ===========
 */
 
-@media (max-width: 768px){
+@media (max-width: 560px){
 
   .logo-header{
     width: 60%;
