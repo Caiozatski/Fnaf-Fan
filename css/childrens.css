@@ -4,29 +4,45 @@ main{
   width: 80%;
   margin: 0 auto;
   padding: 30px 30px;
-  gap: 30px;
+  gap: 60px;
 }
 
 .office-area{
-  pointer-events: none;
   position: relative;
+  overflow: hidden;
+  perspective: 800px;
+  user-select: none;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.office{
+.office-area h3{
+  color: white;
+}
+
+.office-area:hover > .board{
+  transform: translate(-50%, 0%) scale(1) rotateX(0deg);
+}
+
+.office-img{
   height: auto;
   width: 100%;
   display: block;
-}
-
-.fnaf1{
   pointer-events: none;
-  user-select: none;
 }
 
+/*Criar animação que quando der hover no office ele subir o handunit*/
 .board{
   position: absolute;
-  width: 40%;
+  width: 35%;
   bottom: 0;
   left: 50%;
-  transform: translatex(-50%);
+  transform: translate(-50%, 100%) scale(0.8) rotateX(25deg);
+  transition: transform 0.35s ease-out;
+  height: auto;
+  pointer-events: none;
 }
