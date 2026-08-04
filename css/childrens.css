@@ -1,0 +1,32 @@
+main{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 30px;
+  gap: 30px;
+}
+
+.office-area{
+  pointer-events: none;
+  position: relative;
+}
+
+.office{
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.fnaf1{
+  pointer-events: none;
+  user-select: none;
+}
+
+.board{
+  position: absolute;
+  width: 40%;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+}
