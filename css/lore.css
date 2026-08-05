@@ -27,7 +27,7 @@ Book complete
 .book{
   width: 80%;
   display: flex;
-  background-color: red;
+  background-color: #24150f;
   padding: 7px 20px;
 }
 
@@ -60,16 +60,14 @@ Separation line between pages
 }
 
 /*
-=====
-Pages
-=====
+=============
+Pages of book
+=============
 */
 
-
-.left-page{
+.left-page, .right-page{
   flex: 1;
   color: black;
-  border-radius: 15px 0px 0px 15px;
   min-height: 650px;
   height: auto;
   padding: 10px 0;
@@ -83,6 +81,21 @@ Pages
   align-items: center;
   gap: 10px;
 }
+
+
+.left-page{
+  border-radius: 15px 0px 0px 15px;
+}
+
+.right-page{
+  border-radius: 0px 15px 15px 0px;
+}
+
+/*
+==============================
+Images of page zoom and config
+==============================
+*/
 
 .page-img{
   max-width: 100%;
@@ -102,91 +115,72 @@ Pages
   z-index: 18;
 }
 
-.right-page{
-  flex: 1;
-  color: black;
-  border-radius: 0px 15px 15px 0px;
-  min-height: 650px;
-  height: auto;
-  padding: 10px 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  align-items: center;
-  gap: 10px;
-}
 
 /*
-div area for previous page
+div area for previous and next page
 */
 
-.previous-page{
+.previous-page, .next-page{
   width: 35px;
   height: 35px;
   position: absolute;
+  cursor: pointer;
+}
+
+.previous-page{
   bottom: 0;
   left: 0;
-  cursor: pointer;
   border-radius: 0 0 0 12px;
 }
 
-.previous-page::after {
+.next-page{
+  bottom: 0;
+  right: 0;
+  border-radius: 0 0 15px 0;
+}
+
+.previous-page::after, .next-page::after{
   content: "";
   position: absolute;
-  border-radius: 0 0 0 15px;
   inset: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
 
+.previous-page::after{
+  border-radius: 0 0 0 15px;
   background: linear-gradient(
     225deg,
     transparent 50%,
     rgba(255, 255, 255, 0) 51%,
     rgba(238, 238, 238, 0.8) 100%
   );
-
-  opacity: 0;
-  transition: opacity 0.25s ease;
 }
 
-.previous-page:hover::after{
-  opacity: 1;
-}
 
-/*
-div area for next page
-*/
-
-.next-page{
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-}
-
-.next-page::after {
-  content: "";
-  position: absolute;
+.next-page::after{
   border-radius: 0 0 15px 0;
-  inset: 0;
-
   background: linear-gradient(
     135deg,
     transparent 50%,
     rgba(252, 252, 252, 0) 51%,
     rgba(238, 238, 238, 0.8) 100%
   );
-
-  opacity: 0;
-  transition: opacity 0.25s ease;
 }
 
-.next-page:hover::after{
+.previous-page:hover::after, .next-page:hover::after{
   opacity: 1;
 }
+
+.previous-mobile {
+  display: none;
+}
+
+/*
+===============================
+Message area of Security Breach
+===============================
+*/
 
 .messages{
   width: 100%;
@@ -214,8 +208,47 @@ div area for next page
   color: #44a499;
 }
 
-@media (max-width: 768px) {
+/*
+=====================
+Polaroid area of Ruin
+=====================
+*/
 
+.polaroids-area{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.polaroid{
+  padding: 8px 8px 15px;
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex: 1;
+}
+
+.polaroid img{
+  width: 80%;
+  height: auto;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+  flex: 1
+}
+
+/*
+===========
+TABLET VIEW
+===========
+*/
+
+@media (max-width: 768px) {
+  
   .left-page{
     border-radius: 15px 15px 0 0;
   }
@@ -225,10 +258,39 @@ div area for next page
   }
 
   .left-page, .right-page{
-    min-height: 0;
+    height: auto;
+    min-height: fit-content;
+  }
+
+  .mid-line{
+    width: 100%;
+    height: 1px;
   }
 
   .spread {
     flex-direction: column;
+  }
+
+  .previous-desktop{
+    display: none;
+  }
+
+  .previous-mobile{
+    display: block;
+  }
+
+  .page-img-toggle{
+    transform: scale(1.2);
+  }
+
+}
+
+@media (max-width: 425px) {
+  .page-img-toggle{
+    transform: none;
+  }
+
+  .right-page{
+    padding-bottom: 20px;
   }
 }
