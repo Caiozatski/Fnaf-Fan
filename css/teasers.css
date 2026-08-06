@@ -41,4 +41,14 @@ main{
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
