@@ -1,0 +1,153 @@
+main{
+  padding: 30px 20px;
+}
+
+.main-content{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button-back{
+  padding: 10px 20px;
+  background-color: #e6ffff;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #0073cb;
+  border: 2px solid #0073cb;
+  transition: transform 0.60s;
+  align-self: center;
+}
+
+.button-back:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 0px 35px 6px rgba(0,115,203,0.75);
+}
+
+/*
+============================
+MAP AREA WITH CAMERAS IMAGES
+============================
+*/
+
+.map-area{
+  position: relative;
+}
+
+.map-area img{
+  width: 100%;
+}
+
+/*
+===================
+CAMERA BUTTONS AREA
+===================
+*/
+
+.cameras-buttons{
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  height: auto;
+  right: 0;
+}
+
+.cameras-buttons img{
+  width: 100%;
+  display: block;
+}
+
+.camera-btn{
+    position: absolute;
+    cursor: pointer;
+    background: rgba(255,0,0,.2);
+}
+
+.hidden{
+  display: none;
+}
+
+/*CAMERAS POSITIONS*/
+
+.cam1a{
+  top: 4%;
+  left: 32%;
+  width: 14%;
+  height: 10%;
+}
+
+.cam1b{
+  top: 19%;
+  left: 28%;
+  width: 13%;
+  height: 10%;
+}
+
+.cam1c{
+  top: 41%;
+  left: 21%;
+  width: 13%;
+  height: 10%;
+}
+
+.cam2a{
+  top: 73%;
+  left: 32%;
+  width: 13%;
+  height: 10%;
+}
+
+.cam2b{
+  top: 84%;
+  left: 32%;
+  width: 13%;
+  height: 10%;
+}
+
+.cam3{
+  top: 68%;
+  left: 14%;
+  width: 13%;
+  height: 10%;
+}
+
+.cam4a{
+  top: 73%;
+  left: 57%;
+  width: 13%;
+  height: 10%;
+}
+
+.cam4b{
+  top: 84%;
+  left: 57%;
+  width: 13%;
+  height: 10%;
+}
+
+.cam5{
+  top: 26%;
+  left: 4%;
+  width: 13%;
+  height: 10%;
+}
+
+.cam6{
+  top: 63%;
+  left: 79%;
+  width: 13%;
+  height: 10%;
+}
+
+.cam7{
+  top: 27%;
+  left: 81%;
+  width: 13%;
+  height: 10%;
+}
+
+
